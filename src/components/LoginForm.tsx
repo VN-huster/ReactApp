@@ -20,7 +20,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => (
     >
       <Input
         prefix={<UserOutlined />}
-        placeholder="admin@example.com"
+        placeholder="admin"
       />
     </Form.Item>
 

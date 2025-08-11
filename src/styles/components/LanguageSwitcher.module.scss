@@ -1,0 +1,40 @@
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flagButton {
+  border: none !important;
+  padding: 4px 8px !important;
+  height: auto !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: transparent !important;
+}
+
+.flagButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: scale(1.05);
+}
+
+.flagButton.active {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flag {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.languageText {
+  font-size: 12px;
+  font-weight: 500;
+  color: inherit;
+}

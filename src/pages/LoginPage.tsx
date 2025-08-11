@@ -3,7 +3,7 @@
 import React from 'react';
 import { Card, Typography, message } from 'antd';
 import LoginForm from '../components/LoginForm';
-import styles from '../assets/scss/LoginPage.module.scss';
+import styles from '../styles/pages/LoginPage.module.scss';
 
 const { Title } = Typography;
 
@@ -14,7 +14,7 @@ interface LoginPageProps {
 const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   const handleLogin = (values: { email: string; password: string }) => {
     const { email, password } = values;
-    if (email === 'admin@example.com' && password === '123456') {
+    if (email === 'admin' && password === '123456') {
       message.success('Đăng nhập thành công!');
       onLoginSuccess();
     } else {

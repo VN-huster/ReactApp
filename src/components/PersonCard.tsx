@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Checkbox } from 'antd';
-import styles from '../assets/scss/PersonCard.module.scss';
+import styles from '../styles/components/PersonCard.module.scss';
 
 const { Meta } = Card;
 

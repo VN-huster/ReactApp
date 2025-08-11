@@ -1,0 +1,267 @@
+.spaHomePage {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Hero Banner */
+.heroBanner {
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+              url('/assets/spa-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bookingBtn {
+  background: #d4af37;
+  border: none;
+  height: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0 40px;
+  transition: all 0.3s ease;
+}
+
+.bookingBtn:hover {
+  background: #b8941f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Introduction Section */
+.introduction {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.introText {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Main Services */
+.mainServices {
+  padding: 80px 0;
+  background: white;
+}
+
+.serviceCard {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 450px !important; /* Fixed height for all cards with !important */
+}
+
+/* Force the card to be a flex container */
+.serviceCard :global(.ant-card) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the card body flex and take available space */
+.serviceCard :global(.ant-card-body) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px !important;
+}
+
+/* Control the meta content area */
+.serviceCard :global(.ant-card-meta) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixed height for title */
+.serviceCard :global(.ant-card-meta-title) {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  height: 48px !important; /* Allow for 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+}
+
+/* Fixed height for description */
+.serviceCard :global(.ant-card-meta-description) {
+  height: 72px !important; /* Fixed height for exactly 3 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  color: #666 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Position actions at bottom */
+.serviceCard :global(.ant-card-actions) {
+  margin-top: auto !important;
+  border-top: 1px solid #f0f0f0 !important;
+  background: #fafafa !important;
+  padding: 12px 0 !important;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.serviceImageWrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.serviceImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover .serviceImageWrapper img {
+  transform: scale(1.05);
+}
+
+.serviceIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  backdrop-filter: blur(10px);
+}
+
+/* Promotions */
+.promotions {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.promotions .sectionTitle {
+  color: white;
+}
+
+.promoCard {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: white;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.testimonialCard {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.customerImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 4px solid #d4af37;
+}
+
+/* Quick Booking */
+.quickBooking {
+  padding: 80px 0;
+  background: #2c3e50;
+  color: white;
+}
+
+.quickBooking .sectionTitle {
+  color: white;
+}
+
+.bookingForm {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
